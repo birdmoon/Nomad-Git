@@ -7,6 +7,27 @@
 }
 
 body {
+  background-color: tomato;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+article {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article:first-child {
+  color: yellow;
 }
 
 @include responsive("tab") {

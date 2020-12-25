@@ -10,7 +10,7 @@ const routes = {
   css: {
     watch: "src/scss/*",
     src: "src/scss/styles.scss",
-    dist: "dist/css",
+    dest: "dist/css",
   },
 };
 
@@ -25,7 +25,7 @@ const styles = () =>
       })
     )
     .pipe(minify())
-    .pipe(gulp.dist(routes.css.dist));
+    .pipe(gulp.dest(routes.css.dest));
 
 const watch = () => {
   gulp.watch(routes.css.watch, styles);
