@@ -1,0 +1,54 @@
+$desktop-l: 1440px;
+$tablet-l: 1024px;
+$tablet-s: 768px;
+$mobile-l: 640px;
+$mobile-m: 425px;
+$mobile-s: 375px;
+
+@mixin responsive($device) {
+  // only PC
+  @if $device== "pc-only" {
+    @media screen and (min-width: #{$tablet-l + 1}) {
+      @content;
+    }
+  }
+  // PC large
+  @else if $device== "pc-large" {
+    @media screen and (min-width: #{$desktop-l + 1}) {
+      @content;
+    }
+  }
+
+  // --------------------------------------------------
+
+  // 태블릿
+  @else if $device== "tab" {
+    @media screen and (max-width: #{$tablet-l}) {
+      @content;
+    }
+  }
+  // 모바일
+  @else if $device== "mobile" {
+    @media screen and (max-width: #{$tablet-s}) {
+      @content;
+    }
+  }
+  // 모바일 large
+  @else if $device== "mobile-l" {
+    @media screen and (max-width: #{$mobile-l}) {
+      @content;
+    }
+  }
+  // 모바일 mid
+  @else if $device== "mobile-m" {
+    @media screen and (max-width: #{$mobile-m}) {
+      @content;
+    }
+  }
+  // 모바일 small
+  @else if $device== "mobile-s" {
+    @media screen and (max-width: #{$mobile-s}) {
+      @content;
+    }
+  }
+}
