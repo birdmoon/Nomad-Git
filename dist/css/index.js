@@ -1,23 +1,24 @@
-const t1 = document.querySelector("#t1");
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+// function handleClick() {
+//   const hasClass = title.classList.contains(CLICKED_CLASS);
+//   if (!hasClass) {
+//     title.classList.add(CLICKED_CLASS);
+//   } else {
+//     title.classList.remove(CLICKED_CLASS);
+//   }
+// }
 
 function handleClick() {
-  t1.style.color = "teal";
-  t1.style.background = color = "white";
+  title.classList.toggle(CLICKED_CLASS);
 }
 
-function mouseOut() {
-  t1.style.color = "orange";
-  t1.style.background = color = "tomato";
+//toggle이란 메서드는 class가 있는지 없는지 유무를 따져서 속성값안에 값을 적용한다.
+
+function init() {
+  title.addEventListener("click", handleClick);
 }
 
-const age = prompt("How old are you?");
-
-if (age > 18) {
-  console.log("You can drink");
-} else {
-  console.log("you can't");
-}
-
-t1.addEventListener("click", handleClick);
-
-t1.addEventListener("mouseout", mouseOut);
+init();

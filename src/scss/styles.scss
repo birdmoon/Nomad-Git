@@ -6,8 +6,28 @@
   box-sizing: border-box;
 }
 
+.clicked {
+  color: rgb(130, 209, 209);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  transition: color 1s ease-in-out;
+}
+
 body {
   background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
