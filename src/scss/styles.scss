@@ -6,48 +6,95 @@
   box-sizing: border-box;
 }
 
-.clicked {
-  color: rgb(130, 209, 209);
-}
-
-.btn {
-  cursor: pointer;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
-  transition: color 1s ease-in-out;
-}
-
 body {
   background-color: tomato;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  width: 100vw;
-  height: 100vh;
-}
-
-article {
-  font-size: 20px;
+h1 {
+  font-size: 70px;
+  font-weight: 700;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-article:first-child {
-  color: yellow;
+h4 {
+  color: white;
+}
+
+.js-clock {
+  padding-bottom: 40px;
+}
+
+.js-form {
+  input {
+    padding: 10px 10px;
+  }
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.js-toDoForm {
+  display: flex;
+
+  width: 30vw;
+  input {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: tomato;
+    border: 0px;
+    border-bottom: 1px solid white;
+  }
+}
+
+.js-toDoForm input::placeholder {
+  color: white;
+}
+
+.js-toDoForm input:focus {
+  outline: none;
+  caret-color: white; //텍스트 커서 깜빡임 색상
+  color: white;
+}
+.js-toDoForm input:focus::placeholder {
+  color: transparent;
+}
+
+.js-toDoList {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  width: 30vw;
+  li {
+    margin-bottom: 18px;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+    padding-bottom: 5px;
+    padding-left: 10px;
+    button {
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      padding: 0px 0px;
+      padding-left: 10px;
+      cursor: pointer;
+      color: white;
+    }
+  }
 }
 
 @include responsive("tab") {
