@@ -35,12 +35,17 @@ function paintToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
   const newId = toDos.length + 1;
-  delBtn.innerHTML = '<i class="fas fa-window-close"></i>';
+  delBtn.innerHTML = `<i class="fas fa-window-close"></i>`;
   delBtn.addEventListener("click", deleteToDo);
+  // const dateItem = document.createElement("span");
+  // const today = new Date();
+  // const month = today.getMonth() + 1;
+  // dateItem.innerHTML = `<span style="margin-left:auto;">${month}</span>`;
   const span = document.createElement("span");
   span.innerHTML = text;
   li.appendChild(span); //appendChild는 부모성격(여기서는 li에 해당) element에 넣는것임
   li.appendChild(delBtn);
+  // li.appendChid(dateItem);
   li.id = newId;
   toDoList.appendChild(li);
   const toDoObj = {

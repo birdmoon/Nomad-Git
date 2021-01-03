@@ -24,7 +24,7 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `어서와, ${text}!`;
+  greeting.innerHTML = `어서와, <span style="font-size:1.5em;font-weight:500;">${text}!</style>`;
 }
 
 function loadName() {

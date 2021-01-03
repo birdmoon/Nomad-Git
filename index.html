@@ -7,17 +7,26 @@
     <title>(S)CSS Masterclass</title>
   </head>
   <body>
-    <div class="js-clock">
-      <h1></h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="To Do 리스트를 작성하세요!" />
-    </form>
-    <ul class="js-toDoList"></ul>
+    <main class="container">
+      <div class="left">
+        <div class="js-date">
+          <h1></h1>
+        </div>
+        <div class="js-clock">
+          <h2></h2>
+        </div>
+        <form class="js-form form">
+          <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+      </div>
+      <div class="right">
+        <form class="js-toDoForm">
+          <input type="text" placeholder="To Do 리스트를 작성하세요!" />
+        </form>
+        <ul class="js-toDoList"></ul>
+      </div>
+    </main>
     <!-- <script src="js/index.js"></script> -->
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
