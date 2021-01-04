@@ -2,7 +2,7 @@
   "name": "scss-masterclass",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/nomadcoders/scss-masterclass",
+  "repository": "https://birdmoon.github.io/Nomad-Git",
   "author": "Nicolás Serrano Arévalo <itnico.las.me@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -18,6 +18,8 @@
   },
   "scripts": {
     "dev": "gulp dev"
+    "predeploy": "npm run build", 
+    "deploy: "gh-pages -d build"
   },
   "browserslist": {
     "browsers": [
