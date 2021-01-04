@@ -1,7 +1,9 @@
 const clockContainer = document.querySelector(".js-clock"),
   clockTitle = clockContainer.querySelector("h2"),
   dateContainer = document.querySelector(".js-date"),
-  dateTitle = dateContainer.querySelector("h1");
+  dateTitle = dateContainer.querySelector("h1"),
+  jsDays = document.querySelector(".js-days"),
+  daysTitle = document.querySelector("h1");
 
 function getDate() {
   const today = new Date();
@@ -9,9 +11,8 @@ function getDate() {
   const date = today.getDate();
   const day = today.getDay();
   const week = ["日", "月", "火", "水", "木", "金", "土"];
-  dateTitle.innerHTML = `${month}<font size="20px">월</font> ${date}<font size="20px">일</font> <font size="20px">${
-    week[today.getDay()]
-  }</font>`;
+  dateTitle.innerHTML = `${month}<font size="20px">월</font> ${date}<font size="20px">일</font>`;
+  daysTitle.innerHTML = `<font size="20px">${week[today.getDay()]}</font>`;
 }
 
 function getTime() {
