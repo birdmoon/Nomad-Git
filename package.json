@@ -17,7 +17,7 @@
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev",
     "predeploy": "npm run build", 
     "deploy: "gh-pages -d build"
   },
