@@ -2,7 +2,7 @@
   "name": "scss-masterclass",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://birdmoon.github.io/Nomad-Git",
+  "repository": "https://github.com/birdmoon/Nomad-Git",
   "author": "Nicolás Serrano Arévalo <itnico.las.me@gmail.com>",
   "license": "MIT",
   "dependencies": {
