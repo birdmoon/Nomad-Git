@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0 0.1rem;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+.fa-check {
+  background-color: green;
+  padding: 5px;
+  color: white;
+  margin-left: 12px;
+}
+
+.fa-times {
+  background-color: tomato;
+  padding: 5px 7px;
+  color: white;
+}

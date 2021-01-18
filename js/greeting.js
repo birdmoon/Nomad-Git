@@ -3,7 +3,7 @@ const form = document.querySelector(".js-form"),
   greeting = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser", //loadName()함수에 localStroage.getItem(USER_LS) 호출한 변수
-  SHOWING_CN = "showing"; //css에 블럭으로 정의한 클래스
+  SHOWING_CN = "showing"; //css에 블럭으로 정의한 showing 클래스
 
 function saveName(text) {
   localStorage.setItem(USER_LS, text);
