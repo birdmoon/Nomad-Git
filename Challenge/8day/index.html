@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Random Number Game</h1>
+      <h2>Generate a number between 0 and 10</h2>
+      <input
+        type="range"
+        class="js-number"
+        name="number"
+        min="0"
+        max="150"
+        step="1" list="mark"
+      />
+      <datalist id="mark">          
+          <option value="35"></option>
+          <option value="75"></option>
+          <option value="110"></option>
+        </datalist> 
+    </div>
+    <div class="container">
+      <span>Guess the number <input type="text" class="js-inputNumber"></input>
+        <button class="js-btn">Play!!</button>
+      </span>
+      <div class="js-desc"> You Choose 94, the machine chose: 34.</div>
+      <div class="js-result">You won!</div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

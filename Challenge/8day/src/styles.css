@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.js-inputNumber {
+  width: 40px;
+  margin-top: 10px;
+}
+
+.js-result {
+  font-weight: bold;
+}
+
+.js-desc {
+  padding: 10px 0px;
+}
